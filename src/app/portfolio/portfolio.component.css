@@ -1,0 +1,44 @@
+.demo-img{
+    width: 90%;
+    margin:  20px auto;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 4px 3px 10px grey;
+}
+
+.demo-img:hover{
+    opacity: 0.5;
+}
+.edit-image{
+ font-size: 42px;
+    /* padding-top: 27px; */
+    /* padding-right: 57px; */
+    position: absolute;
+    right: 38%;
+    top: 42%;
+ display: none;
+  opacity: 1 !important; 
+}
+
+.edit-image a {
+ /* color: #337ab7; */
+ color: black;
+}
+
+.download-image {
+position: relative;
+}
+
+.download-image:hover .edit-image {
+display: block;
+  opacity: 0.5;  
+ /* background-color:rgba(0, 0, 0, 0.5);  */
+}
+
+.go{
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    left: -19px;
+}

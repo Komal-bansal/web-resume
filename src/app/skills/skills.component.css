@@ -1,0 +1,31 @@
+.section{
+    padding: 0 20px;
+}
+
+h4{
+    padding: 20px;
+    border-bottom: 1px solid grey;
+}
+
+.color1{
+    background: #08aeac !important;
+}
+
+.color2{
+    background: #021533 !important;
+}
+
+.color3{
+    background: #d9212a !important;
+}
+
+.progress{
+    padding-top: 2px !important;
+    height: 26px !important;
+    font-size: 16px !important;
+}
+
+.progress-bar{
+    padding-top: 2px !important;
+    font-size: 16px !important;
+}

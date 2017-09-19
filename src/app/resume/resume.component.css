@@ -1,0 +1,30 @@
+.edu-head{
+    font-size: 20px;
+    color: #08aeac;
+    border-left: solid 5px;
+    padding: 0 10px;
+}
+
+.section{
+    padding: 0 20px;
+}
+
+.container-box{
+     padding: 10px;
+    border: 4px lightgrey;
+    border-style: double;
+    margin: 15px 10px;
+}
+
+.top{
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.review{
+    background: #08aeac;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+}
