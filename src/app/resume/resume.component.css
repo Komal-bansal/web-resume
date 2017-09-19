@@ -18,7 +18,7 @@
 
 .top{
     font-weight: 700;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .review{
@@ -27,4 +27,7 @@
     padding: 10px;
     margin: 10px;
     color: white;
+}
+th{
+    font-weight: 600 !important;
 }
