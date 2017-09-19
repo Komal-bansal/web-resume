@@ -31,3 +31,16 @@
 th{
     font-weight: 600 !important;
 }
+
+.download{
+    background: #08aeac;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    float: right;
+    text-decoration: none;
+}
+
+.download:hover{
+    background: #078c8a;
+}
