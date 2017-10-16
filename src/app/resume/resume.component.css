@@ -27,6 +27,7 @@
     padding: 10px;
     margin: 10px;
     color: white;
+    text-align: justify;
 }
 th{
     font-weight: 600 !important;
@@ -43,4 +44,8 @@ th{
 
 .download:hover{
     background: #078c8a;
+}
+
+.navbar{
+    width: 20%;
 }
