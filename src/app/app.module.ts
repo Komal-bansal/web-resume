@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
-import {BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule} from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 
 import { MainComponent } from './main/main.component';
@@ -12,18 +12,20 @@ import { ContactComponent } from './contact/contact.component';
 import { BlogComponent } from './blog/blog.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SkillsComponent } from './skills/skills.component';
+// import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+// import { ROUTER_PROVIDERS } from 'angular2/router';
+import { Location, LocationStrategy, HashLocationStrategy } from '@angular/common';
 
-
-export const appRoutes:Routes=[
+export const appRoutes: Routes = [
   // {path:'',component: MainComponent,
   // children:[ 
-  {path:'home', component: HomeComponent},
-  {path:'resume', component: ResumeComponent},
-  {path:'contact', component: ContactComponent},
-  {path:'blog', component: BlogComponent},
-  {path:'portfolio', component: PortfolioComponent},
-  {path:'skills', component: SkillsComponent},
-  { path: '**', redirectTo: '/home'},
+  { path: 'home', component: HomeComponent },
+  { path: 'resume', component: ResumeComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'blog', component: BlogComponent },
+  { path: 'portfolio', component: PortfolioComponent },
+  { path: 'skills', component: SkillsComponent },
+  { path: '**', redirectTo: '/home' },
 
   // ]}
 ];
@@ -38,7 +40,7 @@ export const appRoutes:Routes=[
     ContactComponent,
     BlogComponent,
     PortfolioComponent,
-    SkillsComponent    
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
@@ -48,8 +50,14 @@ export const appRoutes:Routes=[
       { enableTracing: true }
     ),
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    { provide: LocationStrategy, useClass: HashLocationStrategy }
+  ],
+  bootstrap: [
+    AppComponent,
+
+  ]
+
 })
 
 export class AppModule { }
